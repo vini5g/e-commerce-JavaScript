@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="py-5"> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p class="title">LOGIN</p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" id="divEstilizada">
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="Nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="Endereco" placeholder="Endereço">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="Telefone" placeholder="Telefone">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="email" id="Email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" id="Senha" placeholder="Senha">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" id="Cidade" placeholder="Cidade">
+                    </div>
+                    <div class="row mt-4" id="areaButton">
+                        <div class="col-12">
+                            <button type="button" id="cadastrar" onclick="Main()">cadastrar</button>
+                            <button type="button" id="voltar" onclick="voltar()">voltar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+          </div>
+    </main>
+
+    <!--Scripts do projeto-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <!--Scripts do projeto-->
+    <script src="../js/utils/verificaDados.js"></script>
+    <script src="../js/utils/limpar.js"></script>
+    <script src="../js/cadastro.js"></script>
+    <script src="../../api/utils/verificaUsuario.js"></script>
+    <script src="../../api/utils/dadosLocalStorage.js"></script>
+    <script src="../../api/Usuario.js"></script>
+</body>
+</html>

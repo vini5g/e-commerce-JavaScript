@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main p.title{
+    text-align: center;
+    color: #001D38;
+    font-size: 1.7em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+div#divEstilizada{
+    border: solid 1px #ff008c;
+    padding: 30px;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+div#divEstilizada input{
+    border-radius: 10px;
+    height: 60px;
+    background-color: #ededed;
+    color: #001D38;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+div#divEstilizada #login{
+    width: 49%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+    color: #e6e6e6;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+div#divEstilizada #cadastrar{
+    width: 49%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+    color: #e6e6e6;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+}

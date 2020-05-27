@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>login</title>
+    <link rel="stylesheet" href="../../css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="Main()">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="./index.html">
+            <img src="../../assets/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        USUÁRIO
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="./Usuario/perfil.html">MEU PERFIL</a>
+                      <a class="dropdown-item" onclick="deslogarIndex()">SAIR</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        PRODUTOS
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="./Produto/gerenciar.html">GERENCIAR</a>
+                      <a class="dropdown-item" href="./Produto/listar.html">LISTAR</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Comprar/comprar.html">COMPRAS</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./Comprar/comprar.html"><img src="../../assets/commerce-and-shopping.svg" alt="carrinho de compras" style="width: 40px;"><span class="badge badge-danger" id="carrinhoDeCompras"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mt-3">
+        <div class="row">
+            <div class="col-6">
+                <h5>Bem vindo, usuário <strong id="usuario"></strong></h5>
+            </div>
+            <div class="col-6">
+                <div class="card bg-light mb-3">
+                    <div class="card-header text-center">Produtos Cadastrados</div>
+                    <div class="card-body">
+                      <p class="card-text text-center" id="elementoManipulavel"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Scripts de links externos-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <!--Scripts de links externos-->
+    <script src="../../../api/utils/dadosLocalStorage.js"></script>
+    <script src="../../js/utils/renderizar.js"></script>
+    <script src="../../js/utils/deslogar.js"></script>
+    <script src="../../js/pages/index.js"></script>
+    <script src="../../../api/Produtos.js"></script>
+
+</body>
+</html>

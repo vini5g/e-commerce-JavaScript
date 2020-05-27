@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    min-height: 20px;
+    border-bottom: solid 1px #e6e6e6;
+    padding: 20px;
+}
+
+nav .nav-link{
+    color: #001D38;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav .nav-link:hover{
+    filter: brightness(70%);
+}
+
+main p{
+    text-align: center;
+    color: #001D38;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+main p.usuarios{
+    text-align: center;
+}
+
+main p.produtos{
+    text-align: center;
+}
+
+p#card-text{
+    font-weight: 500;
+    font-size: 1em;
+}
+
+div#divEstilizada{
+    border-right: solid 1px #ff008c;
+}
+
+div#divEstilizada input{
+    border-radius: 10px;
+    height: 60px;
+    background-color: #ededed;
+    color: #001D38;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+div#divEstilizada button{
+    width: 49%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+    color: #e6e6e6;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+div#divEstilizada button#buttonAlterar{
+    float: right;
+}
+
+div#divEstilizada button:hover{
+    filter: brightness(80%);
+}
+
+table #tableHead{
+    background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+    color: #fff;
+}
+
+button.btn-apagar{
+    border: solid 1px #ff008c;
+    color: #ff008c;
+    transition: 0.2s;
+}
+
+button.btn-apagar:hover{
+    background-color: #ff008c;
+    color: white;
+}
+
+button.btn-alterar{
+    border: solid 1px #ff6357;
+    color: #ff6357;
+    transition: 0.2s;
+}
+
+button.btn-alterar:hover{
+    background-color: #ff6357;
+    color: white;
+}
+
+.btn-confirmar{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+    color: #e6e6e6;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+
+.btn-confirmar:hover{
+    filter: brightness(80%);
+}
+
+.btn-cancelar{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, #ff008c 0%, #ff6357 100%);
+    color: #e6e6e6;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+    float: right;
+    margin-left: 5%;
+}
+
+.btn-cancelar:hover{
+    filter: brightness(80%);
+}
+
+@media only screen and (max-width: 767px) {
+
+    div#divEstilizada button{
+        margin-bottom: 30px;
+    }
+
+    div#divEstilizada{
+        border-bottom: solid 1px #ff008c;
+        border-right: none;
+    }
+
+    #tabela{
+        margin-top: 30px;
+    }
+}
+
